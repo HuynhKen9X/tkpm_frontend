@@ -183,7 +183,7 @@ export default function Footer() {
             color: "#bbb",
           }}
         >
-          <p>© 2024 . All rights reserved. - Furniture Corner</p>
+          <p>© 2024 . All rights reserved. - TKPM</p>
         </div>
       </Container>
     </div>

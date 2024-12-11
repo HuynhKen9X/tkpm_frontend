@@ -1,0 +1,243 @@
+/* Tổng quan về body và phông chữ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(180deg, #e6f0ff, #ffffff);
+  }
+  
+  /* Container chính */
+  .quiz-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Tiêu đề quiz */
+  .quiz-header {
+    background: linear-gradient(90deg, #007bff, #5bc0de);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .quiz-header h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  /* Phần câu hỏi */
+  .question-section {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background-color: #f8f9fa;
+  }
+  
+  .question-section .question-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .question-section .question-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .question-section .question-text {
+    flex: 2;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+    padding-left: 20px;
+  }
+  
+  /* Các đáp án */
+  .answer-section {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .answer-section button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .answer-section button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  /* Navigation và nút điều hướng */
+  .quiz-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #e6f0ff;
+  }
+  
+  .quiz-footer .progress {
+    flex: 1;
+    margin: 0 20px;
+    height: 8px;
+    background: #d9e9ff;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .quiz-footer .progress-bar {
+    height: 100%;
+    width: 20%; /* Tỷ lệ hoàn thành */
+    background: #007bff;
+    border-radius: 5px;
+  }
+  
+  .quiz-footer .next-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quiz-footer .next-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .quiz-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(135deg, #e6f1fc, #c8e3f9);
+    padding: 20px;
+  }
+  
+  .result-icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .result-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .result-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .result-input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .result-email-input {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    width: 250px;
+  }
+  
+  .result-submit-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .result-submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .restart-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .restart-button:hover {
+    background-color: #218838;
+  }
+
+  /* Đặt kiểu dáng chung cho các nút */
+.navigation-buttons button {
+    background-color: #4CAF50; /* Màu xanh lá */
+    color: white; /* Màu chữ */
+    font-size: 16px; /* Cỡ chữ */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    margin: 5px; /* Khoảng cách giữa các nút */
+    border: none; /* Xóa viền */
+    border-radius: 5px; /* Góc bo tròn */
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+  }
+  
+  /* Hiệu ứng hover */
+  .navigation-buttons button:hover {
+    background-color: #45a049; /* Màu xanh đậm hơn khi hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+  }
+  
+  /* Vô hiệu hóa nút (disabled) */
+  .navigation-buttons button:disabled {
+    background-color: #ccc; /* Màu xám nhạt */
+    color: #666; /* Màu chữ xám */
+    cursor: not-allowed; /* Con trỏ bị chặn */
+  }
+  
+  /* Bố cục nút điều hướng */
+  .navigation-buttons {
+    display: flex; /* Hiển thị các nút theo hàng ngang */
+    justify-content: center; /* Căn giữa các nút */
+    align-items: center; /* Căn giữa theo trục dọc */
+    margin-top: 20px; /* Khoảng cách trên */
+  }
+  
+  /* Cách điệu nút "Finish Quiz" đặc biệt */
+  .navigation-buttons button:last-child {
+    background-color: #007BFF; /* Màu xanh dương */
+    font-weight: bold; /* Chữ đậm */
+  }
+  
+  .navigation-buttons button:last-child:hover {
+    background-color: #0056b3; /* Màu xanh đậm hơn khi hover */
+  }
+  

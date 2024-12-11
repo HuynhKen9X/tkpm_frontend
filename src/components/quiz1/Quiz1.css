@@ -1,0 +1,266 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333333;
+  }
+  
+  .question-container {
+    margin-top: 20px;
+  }
+  
+  .question-text {
+    font-size: 18px;
+    color: #444444;
+  }
+  
+  .options-container label {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555555;
+  }
+  
+  .options-container input {
+    margin-right: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .prev-button,
+  .next-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: #0056b3;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .music-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .music-button:hover {
+    color: #007bff;
+  }
+  
+  .quiz-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333333;
+    margin: 0;
+  }
+  
+  .quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .music-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  .quiz-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .option-label {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .prev-button,
+  .next-button,
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover,
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .quiz-result {
+    text-align: center;
+  }
+  
+  .result-input-section {
+    margin-top: 20px;
+  }
+  
+  .result-email-input {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .restart-button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .music-button {
+    font-size: 24px;
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .music-button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+
+  /* style.css */
+
+/* Basic Layout Styles */
+.quiz-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.quiz-result {
+  padding: 20px;
+  text-align: center;
+}
+
+.option-label {
+  font-size: 18px;
+}
+
+.question-container {
+  padding: 20px;
+}
+
+.music-button {
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.header-container {
+  margin-bottom: 20px;
+}
+
+/* Bootstrap-like styling */
+.btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}

@@ -70,6 +70,16 @@ export default function Header() {
                   Quiz
                 </Link>
               </NavItem>
+              <NavItem>
+                <Link to="/Quiz1" className="header-item">
+                  Quiz1
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/Quiz2" className="header-item">
+                  Quiz2
+                </Link>
+              </NavItem>
             </Nav>
           </Collapse>
 

@@ -12,7 +12,8 @@ import UserList from "./components/Login/UserList";
 import ProtectedRoute from './components/ProtectedRoute';
 import Blogpage from "./pages/BlogPage/Blogpage";
 import QuizPage from "./pages/QuizPage/QuizPage";
-
+import QuizPage1 from "./pages/QuizPage1/QuizPage1";
+import QuizPage2 from "./pages/QuizPage2/QuizPage2";
 export default function App() {
   return (
     <div>
@@ -37,6 +38,8 @@ export default function App() {
           <Route path="/reviews" element={<Home/>} />
           <Route path="/blog" element={<Blogpage />} />
           <Route path="/quiz" element={<QuizPage />} />
+          <Route path="/quiz1" element={<QuizPage1 />} />
+          <Route path="/quiz2" element={<QuizPage2 />} />
         </Routes>
       </HashRouter>
     </div>
